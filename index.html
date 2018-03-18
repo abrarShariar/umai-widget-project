@@ -11,142 +11,9 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 
 
-  <style>
-  
-  .modal-content {
-    background-color: #f8f9fa;
-  }
-  
-  #mainContainer {
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  #modal-top-header {
-    background-color: #0b2a2d;
-    color: #fff;
-    font-size: 14px;
-  }
-  
-  .circle-widget {
-    border-radius: 50%;
-    border: 1px solid transparent;
-    width: 30px;
-    color: #a6724b;
-    background-color: #fff;
-  }
-  
-  .circle-widget > span {
-    text-align: center;
-    line-height: 28px;
-    display: block;
-  }
-  
-  #top-banner > h2 {
-    font-size: 30px;
-    line-height: 1.1;
-    font-weight: 300;
-  }
-  
-  #cover_img {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    max-width: 100%;
-    vertical-align: middle;
-    border: 0;
-    
-  }
-  
-  .modal-dialog {
-    max-width: 700px;
-  }
-  
-  #banner_box {
-    height: 160px;
-    position: relative;
-    width: 100%;
-    margin: 0;
-    overflow: hidden;
-  }
-  
-  #picker-container {
-    padding-top: 30px;
-    padding-right: 15px;  
-    padding-left: 15px;
-    position: relative;
-  }
-  
-  .picker-selector {
-    width: 210px;
-    display: inline-block!important;
-    background-position: 92% 50%;
-    background-repeat: no-repeat;
-    background-image: url('https://s3-ap-southeast-1.amazonaws.com/widget.letsumai.com/images/icons/dropdown-arrow.png');
-    padding-right: .5em;
-    height: 50px;
-    padding: 6px 15px;
-    line-height: 1.42857143;
-    background-color: transparent;
-    border: 0 solid #ccc;
-    border-bottom: 1px solid #dedede;
-    border-radius: 0;
-    box-shadow: inset 0 0 0 rgba(0,0,0,.075);
-  }
-  
-  select {
-    -webkit-appearance: none;
-    cursor: pointer;
-  }
-  
-  #circle-widget-container {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  
-  #lunch_container {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  
-  
-  .btn-box {
-    background-color: #a6724ba6;
-    width: 100%;
-    color: #fff;
-    min-height: 50px;
-    display: inline-block;
-    padding: 5px 15px;
-    margin-bottom: 15px;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .btn-box-notify {
-    background-color: #fff;
-    width: 100%;
-    color: #000000b3;
-    min-height: 50px;
-    display: inline-block;
-    padding: 5px 15px;
-    margin-bottom: 15px;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    cursor: pointer;
-    border-radius: 5px;
-    border: 1px solid #000000b3;
-  }
-  
-  </style>
+  <!-- styles -->
+  <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
   <div class="container" id="mainContainer">
@@ -186,7 +53,7 @@
               
               <!-- dropdown/picker section -->
               <div id="picker-container" class="row">
-                <div class="picker-element" class="col-md-4">
+                <div class="picker-element" class="col-md-4 col-xs-6 col-sm-6">
                   <select class="picker-selector" style="border-right: 1px solid #dedede;">
                     <option value="18/03/2018">Today, 18/03/2018</option>
                     <option value="19/03/2018">Tommorrow, 19/03/2018</option>
@@ -198,7 +65,7 @@
                   </select>
                 </div>  
                 
-                <div class="picker-element" class="col-md-4">
+                <div class="picker-element" class="col-md-4 col-xs-6 col-sm-6">
                   <select class="picker-selector">
                     <option value="1">Party of 1</option>
                     <option value="2">Party of 2</option>
@@ -213,7 +80,7 @@
                   </select>
                 </div>  
                 
-                <div class="picker-element" class="col-md-4">
+                <div class="picker-element" class="col-md-4 col-sm-12 col-xs-12">
                   <select class="picker-selector" style="border-left: 1px solid #dedede;">
                     <option value="0">Select Time</option>
                     <option value="1">8:00 PM</option>
@@ -329,62 +196,62 @@
                 <span>Lunch</span>
                 <div class="row" style="margin-top:10px">
                   
-                  <div class="col-md-4">
+                  <div class="col-md-4 col-xs-6 col-sm-6">
                     <button type="button" class="btn-box">
                       <span style="float:left">11:30 AM</span>
                       <span style="float:right">Dining Room</span>
                     </button>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-4 col-xs-6 col-sm-6">
                     <button type="button" class="btn-box">
                       <span style="float:left">11:45 AM</span>
                       <span style="float:right">Dining Room</span>
                     </button>
                   </div>
                   
-                  <div class="col-md-4">
+                  <div class="col-md-4 col-xs-6 col-sm-6">
                     <button type="button" class="btn-box">
                       <span style="float:left">12:00 PM</span>
                       <span style="float:right">Dining Room</span>
                     </button>
                   </div>
                   
-                  <div class="col-md-4">
+                  <div class="col-md-4 col-xs-6 col-sm-6">
                     <button type="button" class="btn-box">
                       <span style="float:left">12:15 PM</span>
                       <span style="float:right">Dining Room</span>
                     </button>
                   </div>
                   
-                  <div class="col-md-4">
+                  <div class="col-md-4 col-xs-6 col-sm-6">
                     <button type="button" class="btn-box">
                       <span style="float:left">12:30 PM</span>
                       <span style="float:right">Dining Room</span>
                     </button>
                   </div>
                   
-                  <div class="col-md-4">
+                  <div class="col-md-4 col-xs-6 col-sm-6">
                     <button type="button" class="btn-box" style="background-color: rgba(0,0,0,.075);    color: #4950578a;">
                       <span style="float:left">12:45 PM</span>
                       <span style="float:right">Dining Room</span>
                     </button>
                   </div>
                   
-                  <div class="col-md-4">
+                  <div class="col-md-4 col-xs-6 col-sm-6">
                     <button type="button" class="btn-box" style="background-color: #a6724bf0;">
                       <span style="float:left">1:00 PM</span>
                       <span style="float:right">Dining Room</span>
                     </button>
                   </div>
                   
-                  <div class="col-md-4">
+                  <div class="col-md-4 col-xs-6 col-sm-6">
                     <button type="button" class="btn-box">
                       <span style="float:left">1:15 PM</span>
                       <span style="float:right">Dining Room</span>
                     </button>
                   </div>
                   
-                  <div class="col-md-4">
+                  <div class="col-md-4 col-xs-6 col-sm-6">
                     <button type="button" class="btn-box-notify">
                       
                       <span>
