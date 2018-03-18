@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <title>UMAI widget</title>
+  
+  <!-- bootstrap stuffs -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  
+  <style>
+  
+  #mainContainer {
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  #modal-top-header {
+    background-color: #175259;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .circle-widget {
+    border-radius: 50%;
+    border: 1px solid transparent;
+    width: 30px;
+    color: #a6724b;
+    background-color: #fff;
+  }
+  
+  .circle-widget > span {
+    text-align: center;
+    line-height: 28px;
+    display: block;
+  }
+  
+  #top-banner > h2 {
+    font-size: 30px;
+    line-height: 1.1;
+    font-weight: 300;
+  }
+  
+  #cover_img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    
+  }
+  
+  .modal-dialog {
+    max-width: 700px;
+  }
+  
+  #banner_box {
+    height: 160px;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  #picker-container {
+    padding-top: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    border-right: 1px solid #dedede;
+    border-left: 1px solid #dedede;
+  }
+  
+  #picker-selector {
+    
+    
+  }
+  
+  </style>
+  
+</head>
+<body>
+  <div class="container" id="mainContainer">
+    <h1 style="text-align:center">UMAI Widget</h1>
+    <!-- Button trigger widget -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#widgetModal">
+      Show Widget
+    </button>
+    
+    <!-- widget -->
+    <div class="modal fade" id="widgetModal" tabindex="-1" role="dialog" aria-labelledby="widgetModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">  
+          <!-- top header section -->
+          <div class="modal-header" id="modal-top-header">
+            <div class="circle-widget" style="margin-right: 15px;border: 1px solid #fff;color: #fff;    background-color: rgba(0,0,0,.075);">
+              <span style="color: #fff;">
+                <b>1</b>
+              </span>
+            </div>  
+            <h5 class="modal-title" id="widgetModalLabel">Select a time</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- top banner section -->
+            <div id="top-banner" class="container">
+              <h2>Tippling Club</h2>
+              <div id="banner_box">
+                <img src="./cover.jpg" class="img-responsive" id="cover_img"/>
+              </div>
+            </div>  
+          </div>
+          
+          <!-- dropdown/picker section -->
+          <div id="picker-container" class="col-md-12 col-xs-12 col-sm-12">
+            <div class="picker-element" class="col-md-4 col-xs-4 col-sm-4">
+              <select class="picker-selector">
+                <option value="1">Party of 1</option>
+                <option value="2">Party of 2</option>
+                <option value="3">Party of 3</option>
+                <option value="4">Party of 4</option>
+                <option value="5">Party of 5</option>
+                <option value="6">Party of 6</option>
+                <option value="7">Party of 7</option>
+                <option value="8">Party of 8</option>
+                <option value="9">Party of 9</option>
+                <option value="10">Party of 10</option>
+              </select>
+            </div>  
+          </div>  
+          <!-- footer -->
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
