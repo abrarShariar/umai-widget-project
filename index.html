@@ -102,6 +102,49 @@
     padding-bottom: 20px;
   }
   
+  #lunch_container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  
+  .btn-box {
+    background-color: #a6724ba6;
+    width: 100%;
+    color: #fff;
+    min-height: 50px;
+    display: inline-block;
+    padding: 5px 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .btn-box-notify {
+    background-color: #fff;
+    width: 100%;
+    color: #000000b3;
+    min-height: 50px;
+    display: inline-block;
+    padding: 5px 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #000000b3;
+  }
+  
   </style>
 </head>
 <body>
@@ -137,7 +180,7 @@
                   <img src="./cover.jpg" class="img-responsive" id="cover_img"/>
                 </div>
               </div>  
-                              
+              
               <!-- dropdown/picker section -->
               <div id="picker-container" class="row">
                 <div class="picker-element" class="col-md-4">
@@ -177,7 +220,7 @@
                   </select>
                 </div>  
               </div> 
-            
+              
               <!-- circle widget selector -->
               <div id="circle-widget-container" class="row">
                 <div class="col-md-1">
@@ -277,9 +320,78 @@
                   </div> 
                 </div>  
               </div>  
+              
+              <!-- lunch section -->
+              
+              <div id="lunch-container">
+                <span>Lunch</span>
+                <div class="row" style="margin-top:10px">
+                  
+                  <div class="col-md-4">
+                    <button type="button" class="btn-box">
+                      <span style="float:left">11:30 AM</span>
+                      <span style="float:right">Dining Room</span>
+                    </button>
+                  </div>
+                  <div class="col-md-4">
+                    <button type="button" class="btn-box">
+                      <span style="float:left">11:45 AM</span>
+                      <span style="float:right">Dining Room</span>
+                    </button>
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <button type="button" class="btn-box">
+                      <span style="float:left">12:00 PM</span>
+                      <span style="float:right">Dining Room</span>
+                    </button>
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <button type="button" class="btn-box">
+                      <span style="float:left">12:15 PM</span>
+                      <span style="float:right">Dining Room</span>
+                    </button>
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <button type="button" class="btn-box">
+                      <span style="float:left">12:30 PM</span>
+                      <span style="float:right">Dining Room</span>
+                    </button>
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <button type="button" class="btn-box" style="background-color: rgba(0,0,0,.075);    color: #4950578a;">
+                      <span style="float:left">12:45 PM</span>
+                      <span style="float:right">Dining Room</span>
+                    </button>
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <button type="button" class="btn-box" style="background-color: #a6724bf0;">
+                      <span style="float:left">1:00 PM</span>
+                      <span style="float:right">Dining Room</span>
+                    </button>
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <button type="button" class="btn-box">
+                      <span style="float:left">1:15 PM</span>
+                      <span style="float:right">Dining Room</span>
+                    </button>
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <button type="button" class="btn-box-notify">
+                      <span>Notify Me</span>
+                    </button>
+                  </div>
+                </div>
+              </div>  
             </div>              
           </div>
-
+          
           <!-- footer -->
           <div class="modal-footer">
           </div>
